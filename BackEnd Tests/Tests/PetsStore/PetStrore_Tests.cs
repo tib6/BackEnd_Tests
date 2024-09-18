@@ -16,7 +16,6 @@ namespace BackEnd_Tests.Tests.PetsStore
         [Test]
         public void AddPet_HappyFlow()
         {
-            Console.WriteLine($"{System.AppDomain.CurrentDomain.BaseDirectory}../../../TestResults/" + "index.html");
             var category = new Category()
             {
                 id = 1,
@@ -64,7 +63,6 @@ namespace BackEnd_Tests.Tests.PetsStore
         [Test]
         public void test()
         {
-            Console.WriteLine($"{System.AppDomain.CurrentDomain.BaseDirectory}/../../../TestResults/" + "index.html");
             Assert.Fail();
         }
     }
