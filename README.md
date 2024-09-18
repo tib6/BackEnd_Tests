@@ -1,4 +1,4 @@
-Backend Test Automation Template ->
+Backend Test Automation Template
 
 This template is designed for automating backend tests in C# using NUnit for test framework, HttpClient for API requests,
 ExtentReports for reporting, and JSON models for managing test data. It offers a simple setup for running API tests with rich,
