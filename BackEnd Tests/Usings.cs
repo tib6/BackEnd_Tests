@@ -1,0 +1,12 @@
+global using System;
+global using System.Collections.Generic;
+global using System.Net;
+global using System.Net.Http.Headers;
+global using System.Threading.Tasks;
+global using System.Text;
+global using NUnit.Framework;
+global using Newtonsoft.Json;
+global using BackEnd_Tests.Models;
+global using BackEnd_Test.Base;
+global using BackEnd_Test.Util;
+global using NUnit.Framework.Interfaces;
