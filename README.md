@@ -66,7 +66,6 @@ The project is pre-configured with all necessary dependencies in the .csproj fil
 
 
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
 
     <TargetFramework>net8.0</TargetFramework>
@@ -82,7 +81,6 @@ The project is pre-configured with all necessary dependencies in the .csproj fil
     <IsTestProject>true</IsTestProject>
   
   </PropertyGroup>
-
   <ItemGroup>
   
     <PackageReference Include="coverlet.collector" Version="6.0.0" />
@@ -106,7 +104,6 @@ The project is pre-configured with all necessary dependencies in the .csproj fil
     <Using Include="NUnit.Framework" />
   
   </ItemGroup>
-  
 </Project>
 
 Conclusion
