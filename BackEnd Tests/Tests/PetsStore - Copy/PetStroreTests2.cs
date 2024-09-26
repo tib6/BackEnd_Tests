@@ -1,10 +1,11 @@
 ﻿
 using AventStack.ExtentReports.Tests.Parallel;
+using MongoDB.Bson;
 
 namespace BackEnd_Tests.Tests.PetsStore
 {
     [TestFixture, Category("PetShop"), Category("Jenkins")]
-    public class PetStrore_Tests_Copy : BaseFixture
+    public class PetStroreTests2 : BaseFixture
     {
         enum Status
         {
@@ -52,9 +53,11 @@ namespace BackEnd_Tests.Tests.PetsStore
                 status = Status.available.ToString()
             };
 
+            ExtentTestManager.GetTest().Log(AventStack.ExtentReports.Status.Info, "Request: " + body.ToJson());
             var content = new StringContent(JsonConvert.SerializeObject(body), Encoding.UTF8, "application/json");
             var uri = new Uri($"{TestSettings.BaseUrlPetStore}{TestSettings.AddPetPetStore}");
             var response = HttpClientBasic.SendPostAsync<AddPetShopResponse>(uri, content).Result;
+            ExtentTestManager.GetTest().Log(AventStack.ExtentReports.Status.Info, "Response: " + response.ToJson());
             Assert.Multiple(() =>
             {
                 Assert.That(response.category.name, Is.EqualTo(category.name));
